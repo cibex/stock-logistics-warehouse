@@ -5,15 +5,13 @@
             expr="//table[.//span[@t-field='line.inventory_quantity']]/thead/tr"
             position="inside"
         >
-            <th class="text-right">
-                <strong>Adjustment cost</strong>
-            </th>
+            <th class="text-end">Adjustment Cost</th>
         </xpath>
         <xpath
             expr="//tr[.//span[@t-field='line.inventory_quantity']]"
             position="inside"
         >
-            <td class="text-right">
+            <td class="text-end">
                 <span t-field="line.adjustment_cost" />
             </td>
         </xpath>

@@ -11,10 +11,20 @@ class TestStockQuantCostInfo(TransactionCase):
         super().setUp()
         product_obj = self.env["product.product"]
         self.product_1 = product_obj.create(
-            {"name": "product test 1", "type": "product", "standard_price": 1000}
+            {
+                "name": "product test 1",
+                "type": "consu",
+                "standard_price": 1000,
+                "is_storable": True,
+            }
         )
         self.product_2 = product_obj.create(
-            {"name": "product test 2", "type": "product", "standard_price": 2000}
+            {
+                "name": "product test 2",
+                "type": "consu",
+                "standard_price": 2000,
+                "is_storable": True,
+            }
         )
 
     def test_compute_adjustment_cost(self):

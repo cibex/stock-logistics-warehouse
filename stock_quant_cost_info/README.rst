@@ -28,11 +28,11 @@ Stock Quant Cost Info
 
 |badge1| |badge2| |badge3| |badge4| |badge5|
 
-This module extends the functionality of *Quantity Adjustments* in
-*Stock Quants* to show a new column *Adjustment cost* in *Quant Details*
-list and PDF report table. The value of *Adjustment cost* will be
-self-calculated according to: (Real Quantity - Theoretical Quantity) \*
-Product Cost
+This module enhances the Physical Inventory functionality by introducing
+a new column, Adjustment Cost, within the Quant Details list and its
+corresponding PDF report. The Adjustment Cost is dynamically calculated
+based on the following formula: (Real Quantity - Theoretical Quantity)
+multiplied by the Product Cost.
 
 **Table of contents**
 
@@ -50,10 +50,11 @@ Usage
 
 To use this module, you need to:
 
-1. Go to *Inventory > Products > Products* and create or select one.
-2. Click on *Update Quantity* button.
-3. In *Quant* list you will see a new column named *Adjustment cost*.
-4. The cost will be recomputed when we change the *Counted Quantity*.
+1. Go to *Inventory > Products > Products* create or select one and add
+   a cost.
+2. Go to *Inventory > Operations Physical Inventory* you will see a new
+   column named *Adjustment Cost*.
+3. The cost will be recomputed when we change the *Counted Quantity*.
 
 Bug Tracker
 ===========
@@ -82,6 +83,7 @@ Contributors
   - Pedro M. Baeza
   - Sergio Teruel
   - Carlos Roca
+  - Juan Carlos Oñate
 
 Maintainers
 -----------

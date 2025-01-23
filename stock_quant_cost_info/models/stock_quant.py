@@ -11,7 +11,9 @@ class StockQuant(models.Model):
         comodel_name="res.currency", string="Currency", related="company_id.currency_id"
     )
     adjustment_cost = fields.Monetary(
-        string="Adjustment cost", compute="_compute_adjustment_cost", store=True
+        help="(Real Quantity - Theoretical Quantity) multiplied by the Product Cost",
+        compute="_compute_adjustment_cost",
+        store=True,
     )
 
     @api.depends("inventory_diff_quantity", "product_id.standard_price")

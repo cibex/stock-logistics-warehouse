@@ -370,11 +370,11 @@ ul.auto-toc {
 !! source digest: sha256:8077d3323b274fbfc8b14d22a75a0fe271c726c3c2046ea01aad6faa52089b96
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <p><a class="reference external image-reference" href="https://odoo-community.org/page/development-status"><img alt="Beta" src="https://img.shields.io/badge/maturity-Beta-yellow.png" /></a> <a class="reference external image-reference" href="http://www.gnu.org/licenses/agpl-3.0-standalone.html"><img alt="License: AGPL-3" src="https://img.shields.io/badge/licence-AGPL--3-blue.png" /></a> <a class="reference external image-reference" href="https://github.com/OCA/stock-logistics-warehouse/tree/18.0/stock_quant_cost_info"><img alt="OCA/stock-logistics-warehouse" src="https://img.shields.io/badge/github-OCA%2Fstock--logistics--warehouse-lightgray.png?logo=github" /></a> <a class="reference external image-reference" href="https://translation.odoo-community.org/projects/stock-logistics-warehouse-18-0/stock-logistics-warehouse-18-0-stock_quant_cost_info"><img alt="Translate me on Weblate" src="https://img.shields.io/badge/weblate-Translate%20me-F47D42.png" /></a> <a class="reference external image-reference" href="https://runboat.odoo-community.org/builds?repo=OCA/stock-logistics-warehouse&amp;target_branch=18.0"><img alt="Try me on Runboat" src="https://img.shields.io/badge/runboat-Try%20me-875A7B.png" /></a></p>
-<p>This module extends the functionality of <em>Quantity Adjustments</em> in
-<em>Stock Quants</em> to show a new column <em>Adjustment cost</em> in <em>Quant Details</em>
-list and PDF report table. The value of <em>Adjustment cost</em> will be
-self-calculated according to: (Real Quantity - Theoretical Quantity) *
-Product Cost</p>
+<p>This module enhances the Physical Inventory functionality by introducing
+a new column, Adjustment Cost, within the Quant Details list and its
+corresponding PDF report. The Adjustment Cost is dynamically calculated
+based on the following formula: (Real Quantity - Theoretical Quantity)
+multiplied by the Product Cost.</p>
 <p><strong>Table of contents</strong></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
@@ -398,9 +398,10 @@ cost</em> to zero in all existing <em>stock quant</em> before installation.</p>
 <h1><a class="toc-backref" href="#toc-entry-2">Usage</a></h1>
 <p>To use this module, you need to:</p>
 <ol class="arabic simple">
-<li>Go to <em>Inventory &gt; Products &gt; Products</em> and create or select one.</li>
-<li>Click on <em>Update Quantity</em> button.</li>
-<li>In <em>Quant</em> list you will see a new column named <em>Adjustment cost</em>.</li>
+<li>Go to <em>Inventory &gt; Products &gt; Products</em> create or select one and add
+a cost.</li>
+<li>Go to <em>Inventory &gt; Operations Physical Inventory</em> you will see a new
+column named <em>Adjustment Cost</em>.</li>
 <li>The cost will be recomputed when we change the <em>Counted Quantity</em>.</li>
 </ol>
 </div>
@@ -428,6 +429,7 @@ If you spotted it first, help us to smash it by providing a detailed and welcome
 <li>Pedro M. Baeza</li>
 <li>Sergio Teruel</li>
 <li>Carlos Roca</li>
+<li>Juan Carlos Oñate</li>
 </ul>
 </li>
 </ul>

@@ -1,5 +1,1 @@
-This module extends the functionality of *Quantity Adjustments* in
-*Stock Quants* to show a new column *Adjustment cost* in *Quant Details*
-list and PDF report table. The value of *Adjustment cost* will be
-self-calculated according to: (Real Quantity - Theoretical Quantity) \*
-Product Cost
+This module enhances the Physical Inventory functionality by introducing a new column, Adjustment Cost, within the Quant Details list and its corresponding PDF report. The Adjustment Cost is dynamically calculated based on the following formula: (Real Quantity - Theoretical Quantity) multiplied by the Product Cost.
