@@ -17,14 +17,16 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #. module: stock_quant_cost_info
-#: model_terms:ir.ui.view,arch_db:stock_quant_cost_info.report_inventory_cost_info
-msgid "<strong>Adjustment cost</strong>"
-msgstr "<strong>Correttivo costo</strong>"
+#: model:ir.model.fields,help:stock_quant_cost_info.field_stock_quant__adjustment_cost
+msgid "(Real Quantity - Theoretical Quantity) multiplied by the Product Cost"
+msgstr ""
 
 #. module: stock_quant_cost_info
 #: model:ir.model.fields,field_description:stock_quant_cost_info.field_stock_quant__adjustment_cost
-msgid "Adjustment cost"
-msgstr "Correttivo costo"
+#: model_terms:ir.ui.view,arch_db:stock_quant_cost_info.report_inventory_cost_info
+#: model_terms:ir.ui.view,arch_db:stock_quant_cost_info.view_stock_quant_tree_inventory_editable
+msgid "Adjustment Cost"
+msgstr ""
 
 #. module: stock_quant_cost_info
 #: model:ir.model.fields,field_description:stock_quant_cost_info.field_stock_quant__currency_id
@@ -40,3 +42,9 @@ msgstr "Quanti"
 #: model_terms:ir.ui.view,arch_db:stock_quant_cost_info.view_stock_quant_tree_inventory_editable
 msgid "Total"
 msgstr "Totale"
+
+#~ msgid "<strong>Adjustment cost</strong>"
+#~ msgstr "<strong>Correttivo costo</strong>"
+
+#~ msgid "Adjustment cost"
+#~ msgstr "Correttivo costo"
